@@ -507,9 +507,6 @@ Type :- Elemental gallium is not found in nature, but it is easily obtained by s
 Family :- Boron Family
 Characteristics Properties :- Silvery white, Soft, Can be cut with Knife.''')
          
-
-
-
         
     elif x == "germanium" or x == '32' or x == 'ge':
          easygui.msgbox('''Element :- GERMANIUM
@@ -525,11 +522,6 @@ Isotopes :- Germanium-70, Germanium-72, Germanium-73, Germanium-74, Germanium-76
 Type :- Natural and Metalloid
 Family :- Carbon Family
 Characteristics Properties :- Hard, Lustrous, Gray-White, Brittle.''')
-         
-
-
-
-
 
 
     elif x == "arsenic" or x == '33' or x == 'as':
@@ -546,13 +538,8 @@ Isotopes :- Arsenic-75
 Type :- Natural and Metalloid
 Family :- Notrogen Group
 Characteristics Properties :- Semi-Metal, Silver-Grey, Brittle.''')
+
          
-
-
-
-
-
-
     elif x == "selenium" or x == '34' or x == 'se':
          easygui.msgbox('''Element :- SELENIUM
 Symbol :- Se
@@ -569,12 +556,6 @@ Family :- The Chalcogens
 Characteristics Properties :- Red-Gray with Metallic Luster, Good Potovoltaic and Photoconductive Properties.''')
          
 
-
-
-
-
-
-
     elif x == "bromine" or x == '35' or x == 'br':
          easygui.msgbox('''Element :- BROMINE
 Symbol :- Br
@@ -589,12 +570,8 @@ Isotopes :- Bromine-79, Bromine-81
 Type :- Natural and Non-Metal
 Family :- The Halogens
 Characteristics Properties :- Reddish Brown Liquid.''')
+
          
-
-
-
-
-
     elif x == "krypton" or x == '36' or x == 'kr':
          easygui.msgbox('''Element :- KRYPTON
 Symbol :- Kr
@@ -610,8 +587,6 @@ Type :- Natural and Non-Metal (Noble Gas)
 Family :- The Noble Gas 
 Characteristics Properties :- Colourless, Odourless, Tasteless and Monoatomic.''')
          
-
-
 
     elif x == "rubidium" or x == '37' or x == 'rb':
          easygui.msgbox('''Element :- RUBIDIUM
@@ -629,7 +604,6 @@ Family :- Alkali Metals
 Characteristics Properties :- Soft, Silvery-White Colour, Highly Inflammable.''')
          
 
-
     elif x == "strontium" or x == '38' or x == 'sr':
          easygui.msgbox('''Element :- STRONTIUM
 Symbol :- Sr
@@ -645,14 +619,6 @@ Type :- Natural and Metal
 Family :- Alkaline Earth Metals
 Characteristics Properties :- Soft, Silver-Yellow Colour, Reacts with Water.''')
          
-
-
-
-
-
-
-
-
 
     elif x == "yttrium" or x == '39' or x == 'y':
          easygui.msgbox('''Element :- YTTRIUM
@@ -670,13 +636,6 @@ Family :- Scandium Family (Transition Metal)
 Characteristics Properties :- Silvery White Colour, Moderately soft, Ductile Metal.''')
          
 
-
-
-
-
-
-
-
     elif x == "zirconium" or x == '40' or x == 'zr':
          easygui.msgbox('''Element :- ZIRCONIUM
 Symbol :- Zr
@@ -692,7 +651,6 @@ Type :- Natural and Metal
 Family :- Titanium Family (Transition Metal)
 Characteristics Properties :- Very Strong, Malleable, Ductile, Lustrous Silver-Gray Metal.''')
          
-
 
     elif x == "niobium" or x == '41' or x == 'nb':
          easygui.msgbox('''Element :- NIOBIUM 
@@ -710,7 +668,6 @@ Family :- Vanadium Family (Transition Metal)
 Characteristics Properties :- Rare, Soft, Malleable, Ductile, Gray-White Metal.''')
          
 
-
     elif x == "molybdenum" or x == '42' or x == 'mo':
          easygui.msgbox('''Element :- MOLYBDENUM
 Symbol :- Mo
@@ -726,8 +683,6 @@ Type :- It is not found free in nature and It is a Metal
 Family :- Chromium Family (Transition Metal)
 Characteristics Properties :- Ductile and Highly Resistant to Corrosion.''')
          
-
-
 
     elif x == "technetium" or x == '43' or x == 'tc':
          easygui.msgbox('''Element :- TECHNETIUM
@@ -745,8 +700,6 @@ Family :- Manganese Family (Transition Metal)
 Characteristics Properties :- Rare, Silver-Gray metal, Tarnishes slowly in Moist Air.''')
          
 
-
- 
     elif x == "ruthenium" or x == '44' or x == 'ru':
          easygui.msgbox('''Element :- RUTHENIUM
 Symbol :- Ru
@@ -762,8 +715,6 @@ Type :- It is found in Ores and It is a Metal
 Family :- Iron Family (Transition Metal)
 Characteristics Properties :- Very Rare, Lustrous, Brittle, Does not tarnish at Room Temprature.''')
          
-
-
 
     elif x == "rhodium" or x == '45' or x == 'rh':
          easygui.msgbox('''Element :- RHODIUM
@@ -781,7 +732,6 @@ Family :- Cobalt Family (Transition Metal)
 Characteristics Properties :- It has a high reflectance and is hard and durable, Upon heating it turns to the oxide.''')
          
 
-
     elif x == "palladium" or x == '46' or x == 'pd':
          easygui.msgbox('''Element :- PALLADIUM
 Symbol :- Pd
@@ -797,8 +747,6 @@ Type :- Natural and Metal
 Family :- Nickel Family (Transition Metal)
 Characteristics Properties :- Highly Dense, Malleable, Ductile.''')
          
-
-
 
     elif x == "silver" or x == '47' or x == 'ag':
          easygui.msgbox('''Element :- SILVER
@@ -816,9 +764,6 @@ Family :- Copper Family (Transition Metal)
 Characteristics Properties :- Nearly White, Lustrous, Soft, Excellent Conductor.''')
          
 
-
-
-
     elif x == "cadmium" or x == '48' or x == 'cd':
          easygui.msgbox('''Element :- CADMIUM
 Symbol :- Cd
@@ -834,7 +779,6 @@ Type :- Natural and Metal
 Family :- Zinc Group
 Characteristics Properties :- Bluish-Tinge Surface, Ductile, Malleable Metal.''')
          
-
 
     elif x == "indium" or x == '49' or x == 'in':
          easygui.msgbox('''Element :- INDIUM
@@ -852,8 +796,6 @@ Family :- Zinc Family (Transition Metal)
 Characteristics Properties :- Soft, Malleable, Ductile, Lustrous.''')
          
 
-
-
     elif x == "tin" or x == '50' or x == 'sn':
          easygui.msgbox('''Element :- TIN
 Symbol :- Sn
@@ -868,11 +810,7 @@ Isotopes :- Tin-120
 Type :- Natural and Metal
 Family :- Carbon Family
 Characteristics Properties :- Soft, Pliable, Silvery-White Metal.''')
-         
-
-
-
-
+        
 
     elif x == "antimony" or x == '51' or x == 'sb':
          easygui.msgbox('''Element :- ANITMONY
@@ -890,7 +828,6 @@ Family :- Nitrogen Group
 Characteristics Properties :- Metallic Form is bright, Hard, Brittle.''')
          
 
-
     elif x == "tellurium" or x == '52' or x == 'te':
          easygui.msgbox('''Element :- TELLURIUM
 Symbol :- Te
@@ -906,7 +843,6 @@ Type :- Present in Earth Crust only and It is a Metalloids
 Family :- The Chalcogen
 Characteristics Properties :- Lustrous, Crystalline, Brittle.''')
          
-
 
     elif x == "iodine" or x == '53' or x == 'i':
          easygui.msgbox('''Element :- IODINE
@@ -924,7 +860,6 @@ Family :- The Halogens
 Characteristics Properties :- Dark-Gray/Purple-Black, Solid, Lustrous.''')
          
 
-
     elif x == "xenon" or x == '54' or x == 'xe':
          easygui.msgbox('''Element :- XENON
 Symbol :- Xe
@@ -940,7 +875,6 @@ Type :- Natural and Non-Metal
 Family :- Noble Gas Family
 Characteristics Properties :- Rare, Odorless, Colourless, Tasteless, Chemically unreactive Gas.''')
          
-
 
     elif x == "cesium" or x == '55' or x == 'cs':
          easygui.msgbox('''Element :- CESIUM
@@ -958,7 +892,6 @@ Family :- The Alkali Metals
 Characteristics Properties :- Silvery-Gold, Soft, Ductile.''')
          
 
-
     elif x == "barium" or x == '56' or x == 'ba':
          easygui.msgbox('''Element :- BARIUM
 Symbol :- Ba
@@ -975,8 +908,6 @@ Family :- Alkaline Earth Metals
 Characteristics Properties :- Soft,  Silvery Metal that rapidly Tarnishes in Air and Reacts with Water.''')
          
 
-
-
     elif x == "lanthanum" or x == '57' or x == 'la':
          easygui.msgbox('''Element :-LANTHANUM 
 Symbol :- La
@@ -991,10 +922,8 @@ Isotopes :- Lanthanum-138, Lanthanum-139
 Type :- Natural and Metal
 Family :- Lanthanoids Family
 Characteristics Properties :- Ductile, Malleable, Silvery-White, Can be cut with Knife.''')
+
          
-
-
-
     elif x == "cerium" or x == '58' or x == 'ce':
          easygui.msgbox('''Element :- CERIUM
 Symbol :- Ce
@@ -1011,23 +940,21 @@ Family :- Lanthanoid Family
 Characteristics Properties :- Malleable, Soft, Ductile, Iron-Grey, Harder than Lead.''')
          
 
-
     elif x == "praseodymium" or x == '59' or x == 'pr':
          easygui.msgbox('''Element :- PRASEODYMIUM
-<p>Symbol :- Pr
-<p>Atomic Number :- 59
-<p>Atomic Mass :- 140.908amu
-<p>Atomic Size :- (Calculated 247 pm)
-<p>Electronic Configuration :- [Xe] 4f3 6s2
-<p>Found In :- Period-6
-<p>Discovered By :- Carl Auer von Welsbach in 1885 
-<p>Valence Electron :- 5
-<p>Isotopes :- Praseodymium-141
-<p>Type :- Natural and Metal
-<p>Family :- Rare Earth Metal
-<p>Characteristics Properties :- Soft, Silvery, Malleable, Ductile.''')
+Symbol :- Pr
+Atomic Number :- 59
+Atomic Mass :- 140.908amu
+Atomic Size :- (Calculated 247 pm)
+Electronic Configuration :- [Xe] 4f3 6s2
+Found In :- Period-6
+Discovered By :- Carl Auer von Welsbach in 1885 
+Valence Electron :- 5
+Isotopes :- Praseodymium-141
+Type :- Natural and Metal
+Family :- Rare Earth Metal
+Characteristics Properties :- Soft, Silvery, Malleable, Ductile.''')
          
-
 
     elif x == "neodymium" or x == '60' or x == 'nd':
          easygui.msgbox('''Element :- NEODYMIUM
@@ -1045,8 +972,6 @@ Family :- Rare Earth Metals
 Characteristics Properties :- Ductile, Malleablr, Silvery-White, Oxidises Readily in Air.''')
          
 
-
-
     elif x == "Promethium" or x == '61' or x == 'pm':
          easygui.msgbox('''Element :- PROMETHIUM
 Symbol :- Pm
@@ -1062,8 +987,6 @@ Type :- Man-Made and Metal
 Family :- Lanthanides
 Characteristics Properties :- Emits Beta Radiation, Salts have a red or pink colour.''')
          
-
-
 
     elif x == "samarium" or x == '62' or x == 'sm':
          easygui.msgbox('''Element :- SAMARIUM
@@ -1081,7 +1004,6 @@ Family :- Lanthanide
 Characteristics Properties :- Silvery-White Metal, Used in Optical Lasers, Used as a Neutron absorber in Nuclear reactors.''')
          
 
-
     elif x == "europium" or x == '63' or x == 'eu':
          easygui.msgbox('''Element :- EUROPIUM
 Symbol :- Eu
@@ -1097,8 +1019,6 @@ Type :- Natural and Metal
 Family :- Lanthanide
 Characteristics Properties :- Soft, Silvery, Highly Reactive, Ductile.''')
          
-
-
 
     elif x == "gadolinium" or x == '64' or x == 'gd':
          easygui.msgbox('''Element :- GADOLINIUM
@@ -1116,8 +1036,6 @@ Family :- Lanthanide
 Characteristics Properties :- Soft, Shiny, Ductile, Silvery Metal.''')
          
 
-
-
     elif x == "terbium" or x == '65' or x == 'tb':
          easygui.msgbox('''Element :- TERBIUM
 Symbol :- Tb
@@ -1133,8 +1051,6 @@ Type :- Natural amd Metal
 Family :- Lanthanides
 Characteristics Properties :- Soft, Malleable, Ductile, Silver-Gray Metal.''')
                  
-
-
 
     elif x == "dysprosium" or x == '66' or x == 'dy':
          easygui.msgbox('''Element :- DYSPROSIUM
@@ -1168,7 +1084,6 @@ Family :- Rare-Earth (Lanthanide)
 Characteristics Properties :- Melleable, Soft, Lustrous, Silvery Colour.''')
          
 
-
     elif x == "erbium" or x == '68' or x == 'er':
          easygui.msgbox('''Element :- ERBIUM
 Symbol :- Er
@@ -1201,8 +1116,6 @@ Family :- Lanthanide
 Characteristics Properties :- Bright Silver-Gray Lusture, Can be cut with Knife.''')
          
 
-
-
     elif x == "ytterbium" or x == '70' or x == 'yb':
          easygui.msgbox('''Element :- YTTERBIUM
 Symbol :- Yb
@@ -1218,7 +1131,6 @@ Type :- Natural and Metal
 Family :- Rare-Earth (lanthanide)
 Characteristics Properties :- Soft, Malleable, Ductile, Bright Silvery Lusture.''')
          
-
 
     elif x == "lutetium" or x == '71' or x == 'lu':
          easygui.msgbox('''Element :- LUTETIUM
@@ -1332,7 +1244,6 @@ Family :- Transition Element
 Characteristics Properties :- Hard, Silvery Metal, Unreactive as Gold.''')
          
 
-
     elif x == "platinum" or x == '78' or x == 'pt':
          easygui.msgbox('''Element :- PLATINUM
 Symbol :- Pt
@@ -1349,7 +1260,6 @@ Family :- Transition Element
 Characteristics Properties :- Very Heavy, Precious, Silver-White, Soft, Ductile.''')
          
 
-
     elif x == "gold" or x == '79' or x == 'au':
          easygui.msgbox('''Element :- GOLD
 Symbol :- Au
@@ -1364,10 +1274,8 @@ Isotopes :- Gold-197
 Type :- Natural and Metal
 Family :- Transition Element
 Characteristics Properties :- Ductile, Highly Reflective, Conducts Heat and Electricity, Malleable.''')
+
          
-
-
-
     elif x == "mercury" or x == '80' or x == 'hg':
          easygui.msgbox('''Element :- MERCURY
 Symbol :- Hg
@@ -1383,7 +1291,6 @@ Type :- Natural and Metal
 Family :- Transition Element
 Characteristics Properties :- Fair conductor of Electricity, Poor conductor of Heat, Highest Volatility of any Metal.''')
          
-
 
     elif x == "thallium" or x == '81' or x == 'tl':
          easygui.msgbox('''Element :- THALLIUM
@@ -1401,7 +1308,6 @@ Family :- Alluminum Family
 Characteristics Properties :- Soft, Low-Melting, Low Tensile Strength.''')
          
 
-
     elif x == "lead" or x == '82' or x == 'pb':
          easygui.msgbox('''Element :- LEAD
 Symbol :- Pb
@@ -1417,7 +1323,6 @@ Type :- Natural and Metal
 Family :- Carbon Family
 Characteristics Properties :- Very Malleable, Ductile, Dense, Poor Conductor of Electricity.''')
          
-
 
     elif x == "bismuth" or x == '83' or x == 'bi':
          easygui.msgbox('''Element :- BISMUTH
@@ -1435,7 +1340,6 @@ Family :- Nitrogen Family
 Characteristics Properties :- High Density, Silvery, Pink-Tinged Metal, Brittle.''')
          
 
-
     elif x == "polonium" or x == '84' or x == 'po':
          easygui.msgbox('''Element :- POLONIUM
 Symbol :- Po
@@ -1452,7 +1356,6 @@ Family :- Chalcogen Family
 Characteristics Properties :- Radioactive, Extremely rare semi-metal.''')
          
 
-
     elif x == "astatine" or x == '85' or x == 'at':
          easygui.msgbox('''Element :- ASTATINE
 Symbol :- At
@@ -1468,7 +1371,6 @@ Type :- Natural and Non-Metal
 Family :- Halogen Family
 Characteristics Properties :- Dangerously Radioactive Element.''')
          
-
 
     elif x == "radon" or x == '86' or x == 'rn':
          easygui.msgbox('''Element :- RADON
@@ -1502,7 +1404,6 @@ Family :- Alkali Metal
 Characteristics Properties :- Heavy, Unstable, Radioactive, 22 Minutes of Half-Life.''')
          
 
-
     elif x == "radium" or x == '88' or x == 'ra':
          easygui.msgbox('''Element :- RADIUM
 Symbol :- Ra
@@ -1518,7 +1419,6 @@ Type :- Natural and Metal
 Family :- Alkaline Earth Metal
 Characteristics Properties :- Silvery, Lustrous, Soft, Intensely Radioactive.''')
          
-
 
     elif x == "actinium" or x == '89' or x == 'ac':
          easygui.msgbox('''Element :- ACTINIUM
@@ -1536,7 +1436,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Soft, Silvery-White, Radioactive.''')
          
 
-
     elif x == "thorium" or x == '90' or x == 'th':
          easygui.msgbox('''Element :- THORIUM
 Symbol :- Th
@@ -1552,7 +1451,6 @@ Type :- Natural and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Silvery, Tarnishes Black when it is exposed to Air, Moderately Soft, Malleable.''')
          
-
 
     elif x == "protactinium" or x == '91' or x == 'pa':
          easygui.msgbox('''Element :- PROTACTINIUM
@@ -1570,7 +1468,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Malleable, Shiny, Silver-Gray, Radioactive.''')
          
 
-
     elif x == "uranium" or x == '92' or x == 'u':
          easygui.msgbox('''Element :- URANIUM
 Symbol :- U
@@ -1586,7 +1483,6 @@ Type :- Natural and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Heavy, Silvery-White, Malleable, Ductile, Softer than Steel.''')
          
-
 
     elif x == "neptunium" or x == '93' or x == 'np':
          easygui.msgbox('''Element :- NEPTUNIUM
@@ -1604,7 +1500,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Ductile, Silvery, Radioactive.''')
          
 
-
     elif x == "plutonium" or x == '94' or x == 'pu':
          easygui.msgbox('''Element :- PLUTONIUM
 Symbol :- Pu
@@ -1620,7 +1515,6 @@ Type :- Man-Made and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Silvery Apperance, Yellow Tarnish appears when Slightly Oxidized.''')
          
-
 
     elif x == "americium" or x == '95' or x == 'am':
          easygui.msgbox('''Element :- AMERICIUM
@@ -1638,8 +1532,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Silvery-White, Highly Radioactive.''')
          
 
-
-
     elif x == "curium" or x == '96' or x == 'cm':
          easygui.msgbox('''Element :- CURIUM
 Symbol :- Cm
@@ -1655,8 +1547,6 @@ Type :- Man-Made and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Hard, Brittle, Silvery, Radioactive''')
          
-
-
 
     elif x == "berkelium" or x == '97' or x == 'bk':
          easygui.msgbox('''Element :- BERKELIUM
@@ -1674,8 +1564,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Soft, Silvery-White, Radioactive''')
          
 
-
-
     elif x == "californium" or x == '98' or x == 'cf':
          easygui.msgbox('''Element :- CALIFORNIUM
 Symbol :- Cf
@@ -1690,11 +1578,8 @@ Isotopes :- Californium-249, Californium-250, Californium-251, Californium-252
 Type :- 
 Family :- The Actinides Family
 Characteristics Properties :- Silvery-White, Melting Point-900°C, Boiling Point-1470°C.''')
+
          
-
-
-
-
     elif x == "einsteinium" or x == '99' or x == 'es':
          easygui.msgbox('''Element :- EINSTEINIUM
 Symbol :- Es
@@ -1710,9 +1595,6 @@ Type :- Man-Made and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Metallic, Radioactive, No known uses.''')
          
-
-
-
 
     elif x == "fermium" or x == '100' or x == 'fm':
          easygui.msgbox('''Element :- FERMIUM
@@ -1731,8 +1613,6 @@ Characteristics Properties :- Synthetic, Radioactive''')
          
 
 
-
-
     elif x == "mendelevium" or x == '101' or x == 'md':
          easygui.msgbox('''Element :- MENDELEVIUM
 Symbol :- Md
@@ -1748,9 +1628,6 @@ Type :- Man-Made and Metal
 Family :- The Actinides Family
 Characteristics Properties :- Moderately stable divalent state in addition to a trivalent state, Radioactive.''')
          
-
-
-
 
     elif x == "nobelium" or x == '102' or x == 'no':
          easygui.msgbox('''Element :- NOBELIUM
@@ -1768,8 +1645,6 @@ Family :- The Actinides Family
 Characteristics Properties :- Synthetic, Highly Radioactive, Divalent ion in Aqueous Solution.''')
          
 
-
-
     elif x == "lawrencium" or x == '103' or x == 'lr':
          easygui.msgbox('''Element :- LAWRENCIUM
 Symbol :- Lr
@@ -1785,9 +1660,6 @@ Type :- Man-Made and Metal
 Family :- Transition Element
 Characteristics Properties :- Synthetic, Radioactive''')
          
-
-
-
 
     elif x == "rutherfordium" or x == '104' or x == 'rf':
          easygui.msgbox('''Element :- RUTHERFORDIUM
@@ -1805,10 +1677,6 @@ Family :- Transition Element
 Characteristics Properties :- Highly Radioactive''')
          
 
-
-
-
-
     elif x == "dubnium" or x == '105' or x == 'db':
          easygui.msgbox('''Element :- DUBNIUM
 Symbol :- Db
@@ -1824,11 +1692,6 @@ Type :- Man-Made and Metal
 Family :- Transition Element
 Characteristics Properties :- Longest-Lived Isotope, Synthetic''')
          
-
-
-
-
-
 
     elif x == "seaborgium" or x == '106' or x == 'sg':
          easygui.msgbox('''Element :- SEABORGIUM
@@ -1846,10 +1709,6 @@ Family :- Transition Element
 Characteristics Properties :- Silvery-White or Metallic Gray apperance.''')
          
 
-
-
-
-
     elif x == "bohrium" or x == '107' or x == 'bh':
          easygui.msgbox('''Element :- BOHRIUM
 Symbol :- Bh
@@ -1865,10 +1724,6 @@ Type :- Man-Made and Metal
 Family :- Transition Element
 Characteristics Properties :- Soft, Silvery Metal, Tarnishes in Air, Reacts with water.''')
          
-
-
-
-
 
     elif x == "hassium" or x == '108' or x == 'hs':
          easygui.msgbox('''Element :- HASSIUM
@@ -1886,9 +1741,6 @@ Family :- Transition Element
 Characteristics Properties :- Silvery-White or Metallic Gray colour.''')
          
 
-
-
-
     elif x == "meitnerium" or x == '109' or x == 'mt' :
          easygui.msgbox('''Element :- MEITNERIUM
 Symbol :- Mt
@@ -1904,7 +1756,6 @@ Type :- Man-Made and Metal
 Family :- Transition Element
 Characteristics Properties :- Synthetic, Radioactive.''')
          
-
 
     elif x == "darmstadtium" or x == '110' or x == 'ds':
          easygui.msgbox('''Element :- DARMSTADTIUM
@@ -1922,8 +1773,6 @@ Family :- Transition Element
 Characteristics Properties :- Highly Radioactive, Synthetic.''')
          
 
-
-
     elif x == "roentgenium" or x == '111' or x == 'rg':
          easygui.msgbox('''Element :- ROENTGENIUM
 Symbol :- Rg
@@ -1939,9 +1788,6 @@ Type :- Man-Made and Metal
 Family :- Transition Element
 Characteristics Properties :- Extremely Unstable, Radioactive.''')
          
-
-
-
 
     elif x == "copernicium" or x == '112' or x == 'cn':
          easygui.msgbox('''Element :- COPERNICIUM
@@ -1959,9 +1805,6 @@ Family :- Transition Element
 Characteristics Properties :- Radioactive, Unreactive.''')
          
 
-
-
-
     elif x == "nihonium" or x == '113' or x == 'nh':
          easygui.msgbox('''Element :- NIHONIUM
 Symbol :- Nh
@@ -1978,9 +1821,6 @@ Family :- Boron Family
 Characteristics Properties :- Radioactive, Synthetic.''')
          
 
-
-
-
     elif x == "flerovium" or x == '114' or x == 'fl':
          easygui.msgbox('''Element :- FLEROVIUM
 Symbol :- Fl
@@ -1995,11 +1835,8 @@ Isotopes :- Flerovium-289
 Type :- Man-Made and Metal
 Family :- Carbon Family
 Characteristics Properties :- Superheavy, Radioactive, Synthetic''')
+
          
-
-
-
-
     elif x == "moscovium" or x == '115' or x == 'mc':
          easygui.msgbox('''Element :- MOSCOVIUM
 Symbol :- Mc
@@ -2015,9 +1852,6 @@ Type :- Man-Made and Metal
 Family :- Nitrogen Family
 Characteristics Properties :- Dense, High atomic weight.''')
          
-
-
-
 
     elif x == "livermorium" or x == '116' or x == 'lv':
          easygui.msgbox('''Element :- LIVERMORIUM
@@ -2035,9 +1869,6 @@ Family :- Chalcogens Family
 Characteristics Properties :- Highly Radioactive, Synthetic.''')
          
 
-
-
-
     elif x == "tennessine" or x == '117' or x == 'ts':
          easygui.msgbox('''Element :- TENNESSINE
 Symbol :- Ts
@@ -2052,9 +1883,7 @@ Isotopes :- Tennessine-292
 Type :- Man-Made and Metal
 Family :- Halogen Family
 Characteristics Properties :- Harmful, Radioactive, Synthetic.''')
-         
-
-
+        
 
     elif x == "oganesson" or x == '118' or x == 'og':
          easygui.msgbox('''Element :- OGANESSON
@@ -2071,8 +1900,6 @@ Type :- Man-Made and Metal
 Family :- Nobel Gas Family
 Characteristics Properties :- Radioactive, Synthetic.''')
          
-
-
 
     elif x == "exit" or "":
          easygui.msgbox("Thank You For Using This.")	
