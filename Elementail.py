@@ -28,7 +28,7 @@ Properties :- Tasteless, Odourless, Colourless Gas.''')
     elif x == "helium" or x == '2' or x == 'he':
         easygui.msgbox('''Element :- HELIUM
 Symbol :- He
-Atomic Number :- 2
+Atomic Number :- 2 
 Atomic Mass :- 4.002602 amu
 Atomic Size :- (Calculated 31 pm) & (Vander Waals 140 pm)
 Electronic Configuration :- 1s2
