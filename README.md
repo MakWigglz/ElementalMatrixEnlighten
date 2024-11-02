@@ -1,8 +1,8 @@
-#  This repo. is forked (cloned to my machine too) from "Elementail" by a boy wonder of 12 years old, it is basically an incomplete periodic 
+###   This repo. is forked (cloned to my machine too) from "Elementail" by a boy wonder of 12 years old, it is 
+   basically an incomplete periodic 
    table in Python if else elif statements. Boy wonder indeed, he did it at 12. 
    
-## Now I, 
-  who wasted my younger genius years chasing Love, fun, and ladies, and now at 50 after being rejected by my new "mon amoure", who 
+###  Now I, who wasted my younger genius years chasing Love, fun, and ladies, and now at 50 after being rejected by my new "mon amoure", who 
   
    was  a very fancy lawyer my 
   partner hired....Now all this pain, heartache, and lost years and potential, are the fuel that keep me on my desk 
