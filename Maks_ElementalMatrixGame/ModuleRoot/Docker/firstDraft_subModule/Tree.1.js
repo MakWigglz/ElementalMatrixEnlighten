@@ -1,11 +1,15 @@
+/**
+ * Initializes the 3D tree structure and its components.
+ * @param {HTMLElement} container - The HTML element that will contain the 3D tree.
+ */
 class Tree {
     constructor(container) {
         this.container = container;
         this.branches = [];
         this.numBranches = 10; // Set the number of branches
         this.topics = [
-            'Science', 'Technology', 'Engineering', 'Mathematics',
-            'Art', 'History', 'Geography', 'Music', 'Literature', 'Sports'
+            'Sciences', 'Technology', 'philosophy&creation', 'Politics&Current Affairs',
+                    'History', 'Literature', 'Geography', 'Standard Model: theory of everything', 'military-industrial complex'
         ]; // Add your topics here
 
         class Tree {
@@ -13,8 +17,8 @@ class Tree {
                 this.container = container;
                 this.branches = [];
                 this.topics = [
-                    'Science', 'Technology', 'Engineering', 'Mathematics',
-                    'Art', 'History', 'Literature', 'Geography', 'Music', 'Sports'
+                    'Sciences', 'Technology', 'philosophy&creation', 'Politics&Current Affairs',
+                    'History', 'Literature', 'Geography', 'Standard Model: theory of everything', 'military-industrial complex'
                 ];
                 this.branchMaterial = new Tree.MeshPhongMaterial({ color: 0x555555 });
                 this.branchRadius = 0.5;
@@ -40,7 +44,7 @@ class Tree {
 
                 for (let i = 0; i < this.topics.length; i++) {
                     const branchRotation = new Tree.Euler(0, i * this.branchAngle, 0);
-                    const branchPosition = new THREEИсточector > (
+                    const branchPosition = new THREE.Vector3(
                         i * this.branchSeparation,
                         0,
                         0
@@ -75,7 +79,7 @@ class Tree {
 
                     const globe = new THREE.Mesh(globeGeometry, globeMaterial);
                     globe.position.copy(globePosition);
-                    this部族ntainer.add(globe);
+                    this.container.add(globe);
                 }
             }
 
