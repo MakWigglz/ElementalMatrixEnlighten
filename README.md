@@ -238,53 +238,14 @@ The specific type of schema file you use depends on the database system you are 
    This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
    ```
    ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
+  
    ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   ```
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   This is a sample code to create a tree with ten branches. Each branch of the tree will open a 3D web-based application.
-   The selected code is an outline for a project called "Enlighten," which aims to create an educational web application that takes users on an interactive journey through various scientific topics. The outline provides a high-level overview of the project's technology stack, structure, and features.
+ 
+   ##### The selected code is an outline for a project called "Enlighten," which aims to create an educational web application that takes users on an interactive journey through various scientific topics. The outline provides a high-level overview of the project's technology stack, structure, and features.
 
 Here's a summary of the selected code:
 
-1. **Technology Stack**: The project will use Python (with a web framework like Flask or Django) for the backend, and JavaScript, HTML, and CSS for the frontend. Three.js, a popular library for creating 3D graphics in the browser, will be used to create the 3D tree of life interface.
+###### 1. **Technology Stack**: The project will use Python (with a web framework like Flask or Django) for the backend, and JavaScript, HTML, and CSS for the frontend. Three.js, a popular library for creating 3D graphics in the browser, will be used to create the 3D tree of life interface.
 
 2. **Project Structure**: The project will have several subdirectories, including `ModuleRoot/Docker/firstDraft_subModule/Outline.md`, which contains the outline for the project. Other subdirectories will contain Python scripts, HTML files, and other resources.
 
@@ -337,3 +298,28 @@ Here's a summary of the selected code:
     │   │   │   └── data/
     │   │       └── topics.db
     │   └── README.md
+
+
+######  `__init__.py` file for the SQL Database module. This module provides a simple interface for working with a SQLite database, specifically for managing a "TopicModel" table. Here's a breakdown of the code:
+
+###### 1. The code starts by importing the `sqlite3` module, which is Python's built-in library for working with SQLite databases.
+
+###### 2. Several functions are defined to handle database operations:
+
+   ###### - `create_connection`: Creates a connection to a SQLite database, either in-memory or file-based.
+   - `create_topic_model_table`: Creates the "TopicModel" table if it doesn't exist.
+   - `insert_topic_model_data`: Inserts data into the "TopicModel" table.
+   - `retrieve_topic_model_data`: Retrieves all data from the "TopicModel" table.
+   - `execute_query`: Executes a custom SQL query with optional parameters.
+
+3. The main class `SQLDatabaseModule` is defined, which encapsulates the database operations:
+
+   - The constructor initializes a database connection and creates the "TopicModel" table.
+   - `insert_topic`: Inserts a new topic into the database.
+   - `get_all_topics`: Retrieves all topics from the database.
+   - `execute_custom_query`: Allows executing custom SQL queries.
+   - `close_connection`: Closes the database connection.
+
+##### 4. The `__all__` list at the end specifies which names should be imported when using `from module import *`. It includes the main class and utility functions.
+
+####### This module provides a simple and flexible way to interact with a SQLite database for storing and retrieving topic-related data. It can be easily integrated into a larger application that needs to manage topics or articles.
