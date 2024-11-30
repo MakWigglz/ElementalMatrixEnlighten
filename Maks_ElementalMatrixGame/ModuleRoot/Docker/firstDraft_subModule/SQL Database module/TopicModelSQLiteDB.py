@@ -1,19 +1,14 @@
 import sqlite3
 
-# Connect to the SQLite database (in-memory database for this example)
-connection = sqlite3.connect(':memory:')
+# Connect to the SQLite database (this will create a file named 'your_database.db')
+connection = sqlite3.connect('your_database.db')
 
 # Create a cursor object to interact with the database
 cursor = connection.cursor()
 
-sql_query = '''
-    SELECT * FROMModel
-    WHERE date_added > '2023-01-01'
-'''
 # Create the TopicModel table
-# Create the "TopicModel" table
 cursor.execute('''
-    CREATE TABLE TopicModel (
+    CREATE TABLE IF NOT EXISTS TopicModel (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT,
         content TEXT,
@@ -21,9 +16,10 @@ cursor.execute('''
         url TEXT,
         image_url TEXT,
         date_added TEXT,
-        last_updated
+        last_updated TEXT
     )
 ''')
+
 # Insert data into the "TopicModel" table
 cursor.execute('''
     INSERT INTO TopicModel (title, content, source, url, image_url, date_added, last_updated)
@@ -36,9 +32,6 @@ rows = cursor.fetchall()
 
 for row in rows:
     print(row)
-
-# Commit the changes to the database
-connection.commit()
 
 # Commit the changes to the database
 connection.commit()
