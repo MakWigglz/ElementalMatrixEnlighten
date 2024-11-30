@@ -20,6 +20,7 @@ CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
     content TEXT,
+    source TEXT,
     author_id INTEGER REFERENCES users(id)
 );
 

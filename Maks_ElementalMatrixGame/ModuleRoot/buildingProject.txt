@@ -21,3 +21,198 @@ To start building this project, you can follow these steps:
 10. **Document Your Progress and Share Your Work**: Document your progress and share your work with others by creating a detailed README file, writing blog posts, and contributing to open-source projects. This will help you learn from others and contribute to the broader community of developers.
 
 Remember to follow best practices for software development, such as writing clean, well-documented code, using version control systems like Git, and collaborating with others through platforms like GitHub. Good luck with your project!
+
+To start inserting data into your database, we'll need to use the `SQLDatabaseModule` we've created and integrate it with your backend. Let's go through this process step by step, utilizing the files you've mentioned:
+
+1. First, let's update the `backEnd.py` file to use our `SQLDatabaseModule`:
+
+**File: /Users/amakki/Documents/Coding-Design/GitHub/empty for Github clones/Maksportfolio/MaksPortfolio/Elementail/Elementail/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/backEnd.py**
+
+```python
+from flask import Flask, request, jsonify
+from SQL_Database_module import SQLDatabaseModule
+import wikipedia
+from datetime import datetime
+
+app = Flask(__name__)
+db = SQLDatabaseModule('Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/your_database.db')
+
+def fetch_wikipedia_data(topic):
+    try:
+        page = wikipedia.page(topic)
+        return {
+            'title': page.title,
+            'content': page.summary,
+            'source': 'Wikipedia',
+            'url': page.url,
+            'image_url': page.images[0] if page.images else None
+        }
+    except:
+        return None
+
+@app.route('/add_topic', methods=['POST'])
+def add_topic():
+    topic = request.json.get('topic')
+    if not topic:
+        return jsonify({'error': 'No topic provided'}), 400
+
+    wiki_data = fetch_wikipedia_data(topic)
+    if not wiki_data:
+        return jsonify({'error': 'Failed to fetch data from Wikipedia'}), 400
+
+    current_time = datetime.now().isoformat()
+    db.insert_topic(
+        wiki_data['title'],
+        wiki_data['content'],
+        wiki_data['source'],
+        wiki_data['url'],
+        wiki_data['image_url'],
+        current_time,
+        current_time
+    )
+
+    return jsonify({'message': 'Topic added successfully'}), 200
+
+@app.route('/get_topics', methods=['GET'])
+def get_topics():
+    topics = db.get_all_topics()
+    return jsonify(topics), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+2. Now, let's update the `front-end.html` file to include forms for adding and viewing topics:
+
+**File: front-end.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Matrix Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="tree.js"></script>
+</head>
+<body>
+    <h1>Elemental Matrix Game</h1>
+    <div id="tree-container"></div>
+    
+    <h2>Add New Topic</h2>
+    <form id="add-topic-form">
+        <input type="text" id="topic-input" placeholder="Enter topic name" required>
+        <button type="submit">Add Topic</button>
+    </form>
+
+    <h2>Topics</h2>
+    <ul id="topics-list"></ul>
+
+    <script>
+        // Initialize the tree
+        initTree();
+
+        // Add topic form submission
+        document.getElementById('add-topic-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const topic = document.getElementById('topic-input').value;
+            fetch('/add_topic', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({topic: topic}),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                fetchTopics();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+
+        // Fetch and display topics
+        function fetchTopics() {
+            fetch('/get_topics')
+            .then(response => response.json())
+            .then(topics => {
+                const topicsList = document.getElementById('topics-list');
+                topicsList.innerHTML = '';
+                topics.forEach(topic => {
+                    const li = document.createElement('li');
+                    li.textContent = topic[1]; // Assuming the title is the second element
+                    topicsList.appendChild(li);
+                });
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Initial fetch of topics
+        fetchTopics();
+    </script>
+</body>
+</html>
+```
+
+3. Update `tree.js` to initialize the 3D tree:
+
+**File: tree.js**
+
+```javascript
+function initTree() {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('tree-container').appendChild(renderer.domElement);
+
+    // Add tree geometry here
+    // This is a placeholder for the actual tree implementation
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    camera.position.z = 5;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render(scene, camera);
+    }
+    animate();
+}
+```
+
+4. The `buildingProject.txt` file can be used to document the steps you've taken and any additional notes about the project structure and development process.
+
+5. The `TopicModelSQLiteDB.py` file is not directly used now, as its functionality has been incorporated into the `SQLDatabaseModule` in the `__init__.py` file.
+
+To start inserting data:
+
+1. Make sure your Flask backend is running:
+   ```
+   python backEnd.py
+   ```
+
+2. Open the `front-end.html` file in a web browser.
+
+3. Use the form on the page to add new topics. The backend will fetch data from Wikipedia and insert it into the database.
+
+4. The list of topics will automatically update as you add new ones.
+
+This setup allows you to start inserting data into your database through a web interface, while also displaying a 3D tree visualization (which you can further develop in `tree.js`).
+
+Remember to install necessary Python packages (`flask`, `wikipedia`) if you haven't already:
+
+```
+pip install flask wikipedia
+```
+
+This setup provides a basic framework for your Elemental Matrix Game, allowing you to add topics to the database and visualize them. You can further develop the 3D tree visualization in `tree.js` to represent your topics in a more meaningful way.
