@@ -241,7 +241,7 @@ Database: PostgreSQL or MongoDB
   
    ```
  
-###### The selected code is an outline for a project called "Enlighten," which aims to create an educational web application that takes users on an interactive journey through various scientific topics. The outline provides a high-level overview of the project's technology stack, structure, and features.
+
 
 Here's a summary of the selected code:
 
@@ -322,4 +322,4 @@ Here's a summary of the selected code:
 
 ##### 4. The `__all__` list at the end specifies which names should be imported when using `from module import *`. It includes the main class and utility functions.
 
-####### This module provides a simple and flexible way to interact with a SQLite database for storing and retrieving topic-related data. It can be easily integrated into a larger application that needs to manage topics or articles.
+
