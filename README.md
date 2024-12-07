@@ -1,4 +1,4 @@
-# Project Outline
+## Project Outline
 ## Description: "Enlighten" is an educational web application that takes users on an interactive journey through various scientific topics. The main interface features a 3D tree of life with 10 branches, each representing a different area of science. Users can click on each branch to explore a wealth of information, visuals, and interactive elements
 
 ## Technology Stack
