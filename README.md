@@ -1,30 +1,30 @@
 # Project Outline
-# Description: "Enlighten" is an educational web application that takes users on an interactive journey through various scientific topics. The main interface features a 3D tree of life with 10 branches, each representing a different area of science. Users can click on each branch to explore a wealth of information, visuals, and interactive elements
+## Description: "Enlighten" is an educational web application that takes users on an interactive journey through various scientific topics. The main interface features a 3D tree of life with 10 branches, each representing a different area of science. Users can click on each branch to explore a wealth of information, visuals, and interactive elements
 
-# Technology Stack
+## Technology Stack
 
 Backend: Python (using a web framework like Flask or Django)
 Frontend: JavaScript, HTML, CSS
 3D Graphics: Three.js (a popular library for creating 3D graphics in the browser)
 Database: PostgreSQL or MongoDB
 
-## Project Structure
+### Project Structure
 
-## Backend (Python)
+#### Backend (Python)
 
  Models: Define data models for each topic, including content, links to external sources, and interactive elements.
 
-## Routes: Set up routes for handling user interactions, such as clicking on a branch or requesting information
+#### Routes: Set up routes for handling user interactions, such as clicking on a branch or requesting information
 
-## Data Retrieval: Use APIs to fetch data from sources like Wikipedia, Google Maps, and others
+#### Data Retrieval: Use APIs to fetch data from sources like Wikipedia, Google Maps, and others
 
-## Logic: Implement logic to process and organize information for presentation to the user
+#### Logic: Implement logic to process and organize information for presentation to the user
 
-### Frontend (JavaScript HTML, CSS)
+#### Frontend (JavaScript HTML, CSS)
 
-### Index Page: Create a landing page with a 3D tree of life using Three.js
+#### Index Page: Create a landing page with a 3D tree of life using Three.js
 
-### Branch Pages: Develop individual pages   for each branch, featuring interactive elements and content
+#### Branch Pages: Develop individual pages   for each branch, featuring interactive elements and content
 
 #### UI Components: Design and implement user interface components for navigation, information display, and user interactions
 
