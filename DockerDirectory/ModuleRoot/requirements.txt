@@ -1,0 +1,9 @@
+Flask==2.0.1
+Flask-SQLAlchemy==2.5.1
+Flask-RESTful==0.3.9
+Flask-Cors==3.0.10
+sqlite3==3.36.0
+docker==5.0.3
+opencv-python==4.5.3.56
+numpy==1.21.2
+requests==2.26.0
