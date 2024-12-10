@@ -1,4 +1,4 @@
-FROM python:3.9  # Or your desired Python base image
+FROM python:3.9
 
 # Install system dependencies (if needed)
 RUN apt-get update && apt-get install -y \
@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install -y \
     libxext6 \
     libxrender-dev \
     # Add any other dependencies here
-
 # Install OpenCV
 RUN pip install opencv-python
 
