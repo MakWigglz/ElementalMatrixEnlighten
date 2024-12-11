@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlighten: The Tree of Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load Three.js first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="tree-container"></div>
+    <div id="title-overlay">Enlighten: The Tree of Life</div>
+    <div id="topic-info"></div>
+    <div id="loading">Loading Tree of Life...</div>
+
+    <!-- Load your Tree.1.js after Three.js -->
+    <script src="Tree.1.js"></script>
+    
+    <!-- Your main script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const treeContainer = document.getElementById('tree-container');
+            const loadingElement = document.getElementById('loading');
+
+            if (window.Tree) {
+                try {
+                    const tree = new Tree(treeContainer);
+                    console.log('Tree initialized successfully');
+                    loadingElement.style.display = 'none';
+                } catch (error) {
+                    console.error('Error initializing Tree:', error);
+                    loadingElement.textContent = 'Error loading Tree of Life. Please try again.';
+                }
+            } else {
+                console.error('Tree class not found. Make sure Tree.1.js is loaded correctly.');
+                loadingElement.textContent = 'Error: Tree class not found. Please check the console for details.';
+            }
+        });
+    </script>
+</body>
+</html>
