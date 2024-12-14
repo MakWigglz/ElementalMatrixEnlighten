@@ -1,3 +1,4 @@
+
 import sqlite3
 
 def create_connection(db_path='Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/your_database.db'):

@@ -12,18 +12,23 @@ window.Tree = class Tree {
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         this.camera.position.z = 15;
         
-        this.renderer = new THREE.WebGLRenderer();
+        this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.container.appendChild(this.renderer.domElement);
 
-        this.branchMaterial = new THREE.MeshPhongMaterial({ color: 0x555555 });
+        this.branchMaterial = new THREE.MeshPhongMaterial({ color: 0x8B4513 });
         this.branchRadius = 0.5;
         this.branchHeight = 2;
         this.branchSegments = 10;
         this.branchAngle = Math.PI / 5;
         this.branchSeparation = 0.2;
 
+        this.raycaster = new THREE.Raycaster();
+        this.mouse = new THREE.Vector2();
+
         window.addEventListener('resize', () => this.onWindowResize(), false);
+        window.addEventListener('mousemove', (event) => this.onMouseMove(event), false);
+        window.addEventListener('click', (event) => this.onMouseClick(event), false);
 
         this.init();
     }
@@ -32,7 +37,6 @@ window.Tree = class Tree {
         this.createBranches();
         this.positionBranches();
         this.addLighting();
-        this.addInteraction();
         this.animate();
     }
 
@@ -42,9 +46,27 @@ window.Tree = class Tree {
                 this.branchRadius, this.branchRadius / 2, this.branchHeight, this.branchSegments
             );
             const branch = new THREE.Mesh(branchGeometry, this.branchMaterial);
-            branch.userData = { topic: this.topics[i] };
+            branch.userData = { topic: this.topics[i], originalColor: this.branchMaterial.color.getHex() };
             this.branches.push(branch);
             this.scene.add(branch);
+
+            // Add leaves or decorations to the branch
+            this.addLeaves(branch);
+        }
+    }
+
+    addLeaves(branch) {
+        const leafGeometry = new THREE.SphereGeometry(0.2, 8, 8);
+        const leafMaterial = new THREE.MeshPhongMaterial({ color: 0x00FF00 });
+        
+        for (let i = 0; i < 5; i++) {
+            const leaf = new THREE.Mesh(leafGeometry, leafMaterial);
+            leaf.position.set(
+                Math.random() * 0.5 - 0.25,
+                Math.random() * this.branchHeight,
+                Math.random() * 0.5 - 0.25
+            );
+            branch.add(leaf);
         }
     }
 
@@ -70,25 +92,35 @@ window.Tree = class Tree {
         this.scene.add(directionalLight);
     }
 
-    addInteraction() {
-        const raycaster = new THREE.Raycaster();
-        const mouse = new THREE.Vector2();
+    onMouseMove(event) {
+        this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-        window.addEventListener('click', (event) => {
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        this.raycaster.setFromCamera(this.mouse, this.camera);
 
-            raycaster.setFromCamera(mouse, this.camera);
+        const intersects = this.raycaster.intersectObjects(this.branches);
 
-            const intersects = raycaster.intersectObjects(this.branches);
-
-            if (intersects.length > 0) {
-                const selectedBranch = intersects[0].object;
-                const topic = selectedBranch.userData.topic;
-                alert(`You clicked on the ${topic} branch!`);
-                // Here you can add code to navigate to the topic page or show more information
-            }
+        this.branches.forEach(branch => {
+            branch.material.color.setHex(branch.userData.originalColor);
         });
+
+        if (intersects.length > 0) {
+            const intersectedBranch = intersects[0].object;
+            intersectedBranch.material.color.setHex(0xFF0000);
+        }
+    }
+
+    onMouseClick(event) {
+        this.raycaster.setFromCamera(this.mouse, this.camera);
+
+        const intersects = this.raycaster.intersectObjects(this.branches);
+
+        if (intersects.length > 0) {
+            const selectedBranch = intersects[0].object;
+            const topic = selectedBranch.userData.topic;
+            alert(`You clicked on the ${topic} branch!`);
+            // Here you can add code to navigate to the topic page or show more information
+        }
     }
 
     animate() {
