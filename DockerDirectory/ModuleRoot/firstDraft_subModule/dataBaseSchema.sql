@@ -1,30 +1,19 @@
--- PostgreSQL schema.sql file
-
--- Create a new database (if it doesn't exist)
-CREATE DATABASE my_database;
-
--- Connect to the database
- 
-
--- Create a new table
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    username TEXT UNIQUE NOT NULL,
-    email TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Create another table with a foreign key reference
-CREATE TABLE posts (
-    id SERIAL PRIMARY KEY,
+CREATE TABLE Topics (
+    id INTEGER PRIMARY KEY IDENTITY(1,1),
     title TEXT NOT NULL,
     content TEXT,
     source TEXT,
-    author_id INTEGER REFERENCES users(id)
+    url TEXT,
+    image_url TEXT,
+    date_added DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Add an index to improve query performance
-CREATE INDEX idx_posts_title ON posts (title);
-
--- ... Add more table definitions, constraints, and indexes as needed
+CREATE TABLE Relationships (
+    id INTEGER PRIMARY KEY IDENTITY(1,1),
+    parent_id INTEGER,
+    child_id INTEGER,
+    relationship_type TEXT,
+    FOREIGN KEY (parent_id) REFERENCES Topics(id),
+    FOREIGN KEY (child_id) REFERENCES Topics(id)
+);

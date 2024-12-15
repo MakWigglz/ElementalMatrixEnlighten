@@ -1,5 +1,4 @@
 import sqlite3
-
 # Connect to the SQLite database (this will create a file named 'your_database.db')
 connection = sqlite3.connect('your_database.db')
 
@@ -19,7 +18,6 @@ cursor.execute('''
         last_updated TEXT
     )
 ''')
-
 # Insert data into the "TopicModel" table
 cursor.execute('''
     INSERT INTO TopicModel (title, content, source, url, image_url, date_added, last_updated)
@@ -29,12 +27,9 @@ cursor.execute('''
 # Retrieve data from the "TopicModel" table
 cursor.execute('SELECT * FROM TopicModel')
 rows = cursor.fetchall()
-
 for row in rows:
     print(row)
-
 # Commit the changes to the database
 connection.commit()
-
 # Close the database connection
 connection.close()
