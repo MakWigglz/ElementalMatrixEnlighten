@@ -8,7 +8,7 @@
 /* Set up the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e7c0c0;
+    background-color: #1a1a1a;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -23,9 +23,9 @@ body {
     min-width: 90vw;
     min-height: 90vh;
     position: relative;
-    background-color: rgba(200, 185, 185, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter background for the container */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -42,7 +42,7 @@ canvas {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: #c71414;
+   color: #ffffff; /* White color for better visibility */
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -54,15 +54,16 @@ canvas {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #220404;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better readability */
+    color: #ffffff; /* White text for contrast */
     padding: 10px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 18px;
     max-width: 400px;
     display: none;
     z-index: 10;
 }
+
 
 /* Loading indicator */
 #loading {
@@ -71,7 +72,7 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
-    color: #333;
+    color: #ffffff; 
 }
 
 /* Responsive design */
@@ -86,27 +87,8 @@ canvas {
     }
 
     #topic-info {
-        font-size: 22px;
+        font-size: 16px;
         max-width: 250px;
     }
 }
 
-/*
-Key changes made:
-
-1.
-Added display: flex, justify-content: center, and align-items: center to the body to center the tree container.
-2.
-Changed #tree-container dimensions to width: 80vw and height: 80vh, ensuring it covers at least 50% of the page (80% by default).
-3.
-Added min-width: 50vw and min-height: 50vh to #tree-container to ensure it never goes below 50% of the page size.
-4.
-Added a subtle background color, border-radius, and box-shadow to #tree-container for better visual separation from the background.
-5.
-Applied border-radius to the canvas element to match the container's rounded corners.
-6.
-In the responsive design section, adjusted the #tree-container size for smaller screens to 90% of the viewport.
-
-
-These changes will make the Tree cover a significant portion of the page (80% by default, never less than 50%) and keep it centered. The tree will now be more prominent and the focal point of the page.
-*/
