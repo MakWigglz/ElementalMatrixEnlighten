@@ -2,6 +2,7 @@ CREATE TABLE Topics (
     id INTEGER PRIMARY KEY IDENTITY(1,1),
     title TEXT NOT NULL,
     content TEXT,
+    
     source TEXT,
     url TEXT,
     image_url TEXT,
