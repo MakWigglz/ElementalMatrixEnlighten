@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97fc48c0-30e0-4dd2-b16c-4df5e88c5677" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/dockerfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/Outline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/TopicModelSQLiteDB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/test_existing_database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/SQL Database module/your_database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/Tree.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/backEnd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/dataBaseSchema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/front-end.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maks_ElementalMatrixGame/ModuleRoot/Docker/firstDraft_subModule/tree.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2pgKaf7XPNQyKIvnLHC4KT5E7ng" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.DockerDirectory.app: Compose Deployment.executor": "Run",
+    "Docker.DockerDirectory: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/amakki/Documents/Coding-Design/GitHub/empty for Github clones/Maksportfolio/MaksPortfolio/Elementail/Elementail",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Docker",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Docker.DockerDirectory: Compose Deployment">
+    <configuration name="DockerDirectory: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Maks_ElementalMatrixGame/ModuleRoot/DockerDirectory/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="DockerDirectory.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Maks_ElementalMatrixGame/ModuleRoot/DockerDirectory/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.DockerDirectory: Compose Deployment" />
+        <item itemvalue="Docker.DockerDirectory.app: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.24807.21" />
+        <option value="bundled-python-sdk-00717045f1d3-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.24807.21" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97fc48c0-30e0-4dd2-b16c-4df5e88c5677" name="Changes" comment="" />
+      <created>1733182346165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733182346165</updated>
+      <workItem from="1733182348197" duration="1200000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
